@@ -1,0 +1,26 @@
+version: 0.2
+env:
+  secrets-manager:
+    DB_USER: arn:aws:secretsmanager:ap-south-1:523535113198:secret:wordpress/username_pass-RYpdSP:username
+    DB_PASSWORD : arn:aws:secretsmanager:ap-south-1:523535113198:secret:wordpress/username_pass-RYpdSP:password
+    DB_HOST: arn:aws:secretsmanager:ap-south-1:523535113198:secret:wordpress/username_pass-RYpdSP:host
+    DB_NAME: arn:aws:secretsmanager:ap-south-1:523535113198:secret:/wordpress/db_name-1aldqp:database_name
+phases:
+  install:
+    commands: 
+      -  yum install -y git 
+      - yum install -y gettext
+  pre-build: 
+    commands:
+      - export DB_NAME=$DB_NAME
+      - export DB_USER=$DB_USER
+      - export DB_PASSWORD=$DB_PASSWORD
+      - export DB_HOST=$DB_HOST
+  build:
+    commands:
+      #- git clone https://github.com/sumzzgit/wordpress.git
+      - envsubst < wp-config.php > wp-config.php
+      - zip -r myBuild.zip .
+artifacts:
+  files:
+    - '**/*'
