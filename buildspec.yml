@@ -14,11 +14,15 @@ phases:
     commands:
       - export DB_NAME=$DB_NAME
       - export DB_USER=$DB_USER
-      - export DB_PASSWORD=$DB_PASSWORD
+      - export DB_PASS=$DB_PASSWORD
       - export DB_HOST=$DB_HOST
   build:
     commands:
       #- git clone https://github.com/sumzzgit/wordpress.git
+      - echo $DB_NAME
+      - echo $DB_USER
+      - echo $DB_PASS
+      - echo $DB_HOST
       - cat wp-config.php
       - envsubst < wp-config.php > wp-config.php
       - cat wp-config.php
