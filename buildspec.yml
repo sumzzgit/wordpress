@@ -25,4 +25,4 @@ phases:
       - zip -r myBuild.zip .
 artifacts:
   files:
-    - '**/*'
+    - './*.zip'
