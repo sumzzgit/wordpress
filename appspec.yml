@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
- - source: /*.zip
+ - source: /artifact/*.zip
  - destination: /home/ec2-user/wordpress/
 permissions:
   - object: /var/www/wordpress
