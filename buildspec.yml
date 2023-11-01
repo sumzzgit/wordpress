@@ -22,8 +22,8 @@ phases:
       - envsubst < wp-config-sample.php
       - envsubst < wp-config-sample.php >> wp-config.php
       - cat wp-config.php
-      - zip -r myBuild.zip .
-      - aws s3 cp myBuild.zip s3://sumzzbucket2/artifact/wordpress.zip
+      - zip -r wordpress.zip .
+      - aws s3 cp wordpress.zip s3://sumzzbucket2/artifact/wordpress.zip
 artifacts:
   files:
     - '**/*'
