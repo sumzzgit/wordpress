@@ -20,6 +20,10 @@ phases:
     commands:
       #- git clone https://github.com/sumzzgit/wordpress.git
       #- cat wp-config.php
+      - echo $DB_NAME
+      - echo $DB_USER
+      - echo $DB_PASS
+      - echo $DB_HOST
       - sudo envsubst < wp-config-sample.php 
       - sudo envsubst < wp-config-sample.php > wp-config.php
       - cat wp-config.php
