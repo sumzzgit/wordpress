@@ -19,7 +19,7 @@ phases:
   build:
     commands:
       #- git clone https://github.com/sumzzgit/wordpress.git
-      - cat wp-config.php
+      #- cat wp-config.php
       - sudo envsubst < wp-config-sample.php > wp-config.php
       - cat wp-config.php
       - zip -r myBuild.zip .
