@@ -21,6 +21,7 @@ phases:
       #- git clone https://github.com/sumzzgit/wordpress.git
       - envsubst < wp-config-sample.php
       - envsubst < wp-config-sample.php >> wp-config.php
+      - cat wp-config.php
       - zip -r myBuild.zip .
 artifacts:
   files:
