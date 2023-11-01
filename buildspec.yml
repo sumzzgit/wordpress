@@ -19,12 +19,8 @@ phases:
   build:
     commands:
       #- git clone https://github.com/sumzzgit/wordpress.git
-      - echo $DB_NAME
-      - echo $DB_USER
-      - echo $DB_PASS
-      - echo $DB_HOST
       - cat wp-config.php
-      - envsubst < wp-config.php 
+      - sudo envsubst < wp-config.php > wp-config.php
       - cat wp-config.php
       - zip -r myBuild.zip .
 artifacts:
