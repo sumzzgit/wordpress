@@ -8,7 +8,7 @@ env:
 phases:
   install:
     commands: 
-      -  yum install -y git 
+      - yum install -y git 
       - yum install -y gettext
   pre_build: 
     commands:
