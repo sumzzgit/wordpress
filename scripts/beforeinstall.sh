@@ -8,6 +8,6 @@ fi
 if [ -d "/var/www/wordpress" ]; then
 sudo rm -r -f /var/www/wordpress/*
 else
-sudo mkdir /var/www/wordpress/ 
+sudo mkdir /var/www/wordpress
 fi
 
