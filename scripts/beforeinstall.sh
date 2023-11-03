@@ -5,10 +5,10 @@ else
     sudo mkdir -p /home/ec2-user/wordpress
 fi
 
-if [[ -d "/home/ec2-user/wordpress/test" ]]; then
-    sudo rm -r -f /home/ec2-user/wordpress/test/*
+if [[ -d "/home/ec2-user/test" ]]; then
+    sudo rm -r -f /home/ec2-user/test/*
 else
-    sudo mkdir -p /home/ec2-user/wordpress/test
+    sudo mkdir -p /home/ec2-user/test
 fi
 
 if [[ -d "/usr/share/nginx/wordpress" ]]; then
