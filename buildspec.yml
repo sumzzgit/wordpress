@@ -16,6 +16,7 @@ phases:
       - export DB_USER=$DB_USER
       - export DB_PASS=$DB_PASSWORD
       - export DB_HOST=$DB_HOST
+      - export table_prefix='$table_prefix'
   build:
     commands:
       #- git clone https://github.com/sumzzgit/wordpress.git
