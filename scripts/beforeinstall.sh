@@ -19,4 +19,4 @@ else
 fi
 
 #instaling php dependencies
-sudo yum install php8.1.x86_64 php8.1-gd.x86_64 php8.1-soap.x86_64 php8.1-intl.x86_64 php8.1-mysqlnd.x86_64 php8.1-pdo.x86_64 php8.1-fpm.x86_64 php8.1-odbc.x86_64 php8.1-common.x86_64 php8.1-xml.x86_64 -y
+sudo yum install php8.1.x86_64 php8.1-gd.x86_64 php8.1-soap.x86_64 php8.1-intl.x86_64 php8.1-mysqlnd.x86_64 php8.1-pdo.x86_64 php8.1-fpm.x86_64 php8.1-odbc.x86_64 php8.1-common.x86_64 php8.1-xml.x86_64 -y 2>/dev/null
