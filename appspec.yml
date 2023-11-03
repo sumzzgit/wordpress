@@ -5,17 +5,17 @@ files:
    destination: /home/ec2-user/wordpress/
 file_exists_behavior: OVERWRITE
 permissions:
-  - object: /var/www/wordpress
+  - object: /usr/share/nginx/wordpress
     pattern: "**"
-    owner: apache
-    group: apache
+    owner: nginx
+    group: nginx
     mode: 755
     type:
       - file
-  - object: /var/www/wordpress
+  - object: /usr/share/nginx/wordpress
     pattern: "**"
-    owner: apache
-    group: apache
+    owner: nginx
+    group: nginx
     mode: 755
     type:
       - directory
