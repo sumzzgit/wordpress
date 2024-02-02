@@ -11,3 +11,4 @@ sudo chown -R nginx:nginx /usr/share/nginx/wordpress
 #sudo sudo sed -i '124c\ DocumentRoot "/var/www/wordpress"' /etc/httpd/conf/httpd.conf
 #sudo sudo sed -i '169c\ DirectoryIndex index.php index.html' /etc/httpd/conf/httpd.conf
 sudo systemctl start nginx 
+
