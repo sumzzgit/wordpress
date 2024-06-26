@@ -1,10 +1,10 @@
 version: 0.2
 env:
   secrets-manager:
-    DB_USER: arn:aws:secretsmanager:ap-south-1:523535113198:secret:wordpress/username_pass-RYpdSP:username
-    DB_PASSWORD : arn:aws:secretsmanager:ap-south-1:523535113198:secret:wordpress/username_pass-RYpdSP:password
-    DB_HOST: arn:aws:secretsmanager:ap-south-1:523535113198:secret:wordpress/username_pass-RYpdSP:host
-    DB_NAME: arn:aws:secretsmanager:ap-south-1:523535113198:secret:/wordpress/db_name-1aldqp:database_name
+    DB_USER: arn:aws:secretsmanager:ap-south-1:185633157927:secret:wordpress/host-huiY48:username
+    DB_PASSWORD : arn:aws:secretsmanager:ap-south-1:185633157927:secret:wordpress/host-huiY48:password
+    DB_HOST: arn:aws:secretsmanager:ap-south-1:185633157927:secret:wordpress/host-huiY48:host
+    DB_NAME: arn:aws:secretsmanager:ap-south-1:185633157927:secret:wordpress/host-huiY48:database_name
 phases:
   install:
     commands: 
